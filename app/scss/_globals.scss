@@ -1,0 +1,102 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $transparentWhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ // padding: 20px 24px;
+}
+
+h1 {
+
+}
+
+p {
+  font-size: 15px;
+  font-family: $font_LexendDeca;
+  color: $transparentWhite;
+}
+
+.card-wrapper {
+  padding: 88px 48px;
+ // width: 327px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ // height: 100vh;
+
+}
+
+.card-wrapper div:first-child{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-wrapper div:last-child{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.card {
+  //border:red solid 1px;
+  padding: 48px;
+
+  &-title {
+    text-transform: uppercase;
+    color: $veryLightGray;
+    font-family: $font_LexendDeca;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &-paragraph {
+    padding-bottom: 28px;
+  }
+}
+
+.card-first {
+  background-color: $brightOrange;
+}
+
+.card-second {
+  background-color: $darkCyan;
+}
+
+.card-third {
+  background-color: $veryDarkCyan;
+}
+
+.button {
+  padding: 18px 32px;
+  border-radius: 50px;
+  font-family: $font_LexendDeca;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: $veryLightGray;
+}
+
+.button:hover {
+  border: 2px solid $veryLightGray;
+  background-color: transparent;
+  color: $veryLightGray;
+}
+
+.btn-orange {
+  color: $brightOrange;
+}
+
+.btn-dark-cyan {
+  color: $darkCyan;
+}
+
+.btn-very-dark-cyan {
+  color: $veryDarkCyan;
+}
