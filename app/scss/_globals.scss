@@ -5,15 +5,7 @@
 }
 
 body {
-  background-color: $transparentWhite;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- // padding: 20px 24px;
-}
-
-h1 {
-
+  background-color: $veryLightGray;
 }
 
 p {
@@ -23,15 +15,12 @@ p {
 }
 
 .card-wrapper {
-  padding: 88px 48px;
- // width: 327px;
+  padding: 5.5rem 1.5rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- // height: 100vh;
-
 }
 
 .card-wrapper div:first-child{
@@ -46,19 +35,20 @@ p {
 
 
 .card {
-  //border:red solid 1px;
-  padding: 48px;
+  padding: 3rem;
 
   &-title {
+    font-family: $font_BigShouldersDisplay;
+    font-size: 39px;
     text-transform: uppercase;
     color: $veryLightGray;
-    font-family: $font_LexendDeca;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 2rem;
+    margin-bottom: 1.6875rem;
   }
 
   &-paragraph {
-    padding-bottom: 28px;
+    margin-bottom: 1.8125rem;
+    line-height: 1.6;
   }
 }
 
@@ -75,12 +65,15 @@ p {
 }
 
 .button {
-  padding: 18px 32px;
+  padding: 0.8125rem 2rem; // 13px 32px
   border-radius: 50px;
   font-family: $font_LexendDeca;
+  font-size: 14px;
   text-decoration: none;
   cursor: pointer;
+  border: none;
   background-color: $veryLightGray;
+  border: 2px solid transparent;
 }
 
 .button:hover {
@@ -100,3 +93,48 @@ p {
 .btn-very-dark-cyan {
   color: $veryDarkCyan;
 }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 900px) {
+
+  .card-wrapper {
+    padding: 0;
+    padding-top: 10.6875rem; // 171px 
+    padding-bottom: 8.0625rem; // 129px
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .card {
+    height: 31.25rem; // 500px
+    width: 19.1875rem; // 307px
+
+    &-paragraph {
+      margin-bottom: 5.4375rem; //  87px
+      line-height: 1.6;
+    }
+  }
+
+  .card-wrapper div:first-child{
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .card-wrapper div:last-child{
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
